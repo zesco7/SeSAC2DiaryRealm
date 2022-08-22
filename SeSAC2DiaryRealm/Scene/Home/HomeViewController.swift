@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
         return view
     }()
 
-    var tasks: Results<UserDiary>!
+    var tasks: Results<UserDiary>! //tasks변수값을 넣기위해 tasks와 같은 타입의 변수 생성(배열과 비슷한 기능)
     
     override func viewDidLoad() {
         super.viewDidLoad()

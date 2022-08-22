@@ -22,7 +22,7 @@ class UserDiary: Object {
     @Persisted var photo: String? //사진String(옵션)
     //@Persisted var diaryPhoto: String? //사진String(옵션)
     
-    //PK(필수): Int, UUID, ObjectId
+    //PK(필수): Int, UUID, ObjectId(UUID, ObjectId는 중복값없이 랜덤으로 값생성해줌)  
     @Persisted(primaryKey: true) var ObjectId: ObjectId
     
     convenience init(diaryTitle: String, diaryContents: String?, diaryDate: Date, registerDate: Date, photo: String?) {

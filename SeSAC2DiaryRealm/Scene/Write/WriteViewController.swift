@@ -33,7 +33,7 @@ class WriteViewController: BaseViewController {
         //레코드 내용 입력
         let task = UserDiary(diaryTitle: "하오늘의 일기 \(Int.random(in: 1...100))", diaryContents: "일기 테스트 내용", diaryDate: Date(), registerDate: Date(), photo: nil)
         
-        //레코드 생성
+        //레코드 생성(localRealm.add(task) : localRealm경로에 task 데이터를 추가해달라는 의미)
         try! localRealm.write {
             localRealm.add(task)
             print("Realm Succeed")
